@@ -1,0 +1,82 @@
+
+.container{
+    padding:0px;
+    margin:-20px;
+}
+.sub-container1{
+    background-color: black;
+    padding:0;
+    margin:-20px;
+}
+header{
+    color:rgb(255, 0, 0);
+    margin:20px;
+}
+.topsec{
+    display:flex;
+    align-items: center;
+    
+    
+}
+.flex-topsec{
+    padding:10px;
+}
+#logoname{
+    flex-grow:0.8;
+}
+.sub-container2{
+    background-color: rgb(21, 21, 21);
+    margin:0;
+    padding-bottom:600px;
+}
+#frontpagetext{
+    color:rgb(186, 186, 186);
+    font-weight: 1000;
+    font-size: 100px;
+    margin:0px;
+    padding-top:0px;
+    padding-bottom:600px;
+    
+    
+}
+.btn{
+    border:none;
+    background-color: black;
+    color:rgb(255, 0, 0);
+}
+.btn:hover{
+    cursor: pointer;
+    color:rgb(135, 135, 135);
+}
+.movie{
+    padding:10px;
+   
+   border:2px solid red;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+}
+.movietitleb{
+   color:white;
+   border:none;
+   font-weight:900;
+   font-size: larger;
+   background-color: transparent;
+   padding-top:30px;
+   cursor: pointer;
+
+}
+.movietitleb:hover{
+ color:red
+}
+.movies{
+    color:white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap:10px;
+    justify-items: center;
+   
+ 
+    
+}
