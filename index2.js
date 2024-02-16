@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
-    const urlparams=new URLSearchParams(window.location.search)
-    const filteredres=urlparams.get('results');
+   
+    const filteredres=JSON.parse(localStorage.getItem('filteredResults'))
     const imageBaseURL = 'https://image.tmdb.org/t/p/w200'; 
     const searchb = document.querySelector("#searchb");
     const searchres=document.querySelector('.movies');
