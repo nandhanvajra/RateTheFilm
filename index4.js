@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded',()=>{
                     result.original_title.toLowerCase().includes(searchinp.toLowerCase())
                 );
                 localStorage.setItem('filteredResults',JSON.stringify(filteredResults));
-                const queryString=`?results=${encodeURIComponent(JSON.stringify(filteredResults))}`
-                window.location.href='2.html' +queryString
+                
+                window.location.href='2.html' 
             })
             .catch(error => console.error('Error:', error));
     };
