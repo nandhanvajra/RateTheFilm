@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
     if(filteredres){
-        const filteredresults=JSON.parse(decodeURIComponent(filteredres))
+        const filteredresults=filteredres
         
         filteredresults.forEach((res)=>{
 
