@@ -106,7 +106,7 @@ header{
     font-size:35px;
     color:red;
 }
-.des,.date,.rate{
+.des,.date,.rate,.mrate{
     font-size: 25px;
     font-weight: 300;
 }
@@ -117,6 +117,11 @@ header{
 }
 .er{
     padding:5px;
+}
+.er_in{
+    display:flex;
+    align-items: center;
+
 }
 
 

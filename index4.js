@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     const searchb = document.querySelector("#searchb");
     const searchres=document.querySelector('.movies');
     const home=document.querySelector('#Home')
+    
+    
     home.addEventListener("click",()=>{
         window.location.href='index.html'
     })
@@ -42,10 +44,14 @@ document.addEventListener('DOMContentLoaded',()=>{
         link.classList.add('movietitleb')
         link.textContent=res.original_title
         poster.alt=res.original_title
+        
         poster.height=350
         poster.width=250
+     
         block.appendChild(poster);
         block.appendChild(link)
+        
+      
         searchres.appendChild(block)
         link.addEventListener("click",()=>{
             
@@ -65,7 +71,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     searchb.addEventListener("click", searchdata);
 
     arr.forEach((res) => {
-        
+        console.log(res)
         const block=document.createElement('div');
         block.classList.add('movie');
         const poster=document.createElement('img')
@@ -82,8 +88,11 @@ document.addEventListener('DOMContentLoaded',()=>{
         poster.alt=res.original_title
         poster.height=350
         poster.width=250
+        const myrate=document.createElement('div');
+        myrate.textContent = res.my_rate;
         block.appendChild(poster);
         block.appendChild(link)
+        block.appendChild(myrate)
         searchres.appendChild(block)
         link.addEventListener("click",()=>{
             
@@ -96,9 +105,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         })
        
     });
-    window.addEventListener('beforeunload', () => {
-        arr = []; 
-        localStorage.setItem('alist', JSON.stringify(arr)); 
-    });
+   
     
 })
